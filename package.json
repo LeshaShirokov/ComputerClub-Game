@@ -1,0 +1,15 @@
+{
+  "name": "computer-club-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Мой компьютерный клуб — браузерный экономический симулятор на чистом HTML/CSS/JS",
+  "license": "MIT",
+  "scripts": {
+    "check": "for f in js/*.js tests/*.js; do node --check \"$f\" || exit 1; done",
+    "test": "node --test tests/unit.test.js",
+    "balance": "node tests/balance.js 6",
+    "smoke": "node tests/ui-smoke.js",
+    "shots": "node tests/ui-smoke.js --shots",
+    "serve": "node tests/serve.js 8080"
+  }
+}

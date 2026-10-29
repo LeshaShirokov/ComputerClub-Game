@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Мой компьютерный клуб — браузерный экономический симулятор: откройте игровой клуб, закупите ПК, наймите персонал и выйдите на 30 млн ₽.">
+  <meta name="theme-color" content="#FFC400">
+  <title>Мой компьютерный клуб — экономическая игра</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='2' y='2' width='44' height='44' rx='12' fill='%23151515'/%3E%3Crect x='9' y='10' width='30' height='20' rx='3' fill='none' stroke='%23FFC400' stroke-width='3'/%3E%3Cpath d='M24 30v5M16 38h16' stroke='%23FFC400' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#view">Перейти к игре</a>
+  <div class="app" id="app">
+    <header class="topbar">
+      <span class="logo" id="logo"></span>
+      <h1 class="title">Мой компьютерный клуб</h1>
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Меню" aria-haspopup="dialog" aria-expanded="false" aria-controls="drawer"></button>
+    </header>
+    <section class="dash" id="dash" aria-label="Показатели клуба">
+      <div class="stats" id="stats"></div>
+      <div class="goal" id="goal"></div>
+    </section>
+    <div class="divider">
+      <button class="collapse" id="collapse" type="button" aria-expanded="true" aria-controls="dash" aria-label="Свернуть показатели"></button>
+    </div>
+    <section class="controls" id="controls" aria-label="Управление временем"></section>
+    <main class="view" id="view" tabindex="-1"></main>
+    <nav class="tabbar" id="tabbar" aria-label="Разделы"></nav>
+  </div>
+  <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Меню" hidden></div>
+  <div class="modal-root" id="modal-root"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">Для игры нужен JavaScript.</p></noscript>
+  <script src="js/core.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/economy.js"></script>
+  <script src="js/events.js"></script>
+  <script src="js/quests.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
